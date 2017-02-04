@@ -1,0 +1,195 @@
+/* global */
+body {margin: 0px; font-family: Ubuntu, arial; font-size: 15px; color: #363636; background-color: #efefef;}
+header {
+	width: 100%;
+	min-height: 45px;
+	background-color: #303030;
+	border-bottom: 2px solid #333;
+}
+.gray {
+	color: #9c9c9c;
+}
+.dark {
+	background-color: #696969;
+	color: #cfcfcf;
+	padding: 10px;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.jumbotron {
+	width: 100%;
+	height: 350px;
+	color: #cfcfcf;
+	background-color: #696969;
+	background-image: url('../img/gray-bond-jumbotron01.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.boxes {
+	width: 100%;
+	margin-top: 10px;
+}
+.newsletter {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+	background-color: #363636;
+}
+.btn {
+	height: 35px;
+	width: 100px;
+	border: none;
+	color: #efefef;
+	background-color: #969696;
+	cursor: pointer;
+}
+.btn:hover {background-color: #000;}
+.main-col {
+	width: 100%;
+}
+.products {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+footer {
+	width: 100%;
+	background-color: #363636;
+	color: #cfcfcf;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* header */
+header .logo {
+	width: 100px;
+	max-height: 45px;
+	margin-top: 10px;
+	float: left;
+}
+header h1 {
+	margin: 0px;
+	margin-top: -5px;
+	color: #cfcfcf;
+}
+
+/* navigation */
+nav {
+	width: 70%;
+	height: 45px;
+	float: right;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+nav li {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	list-style: none;
+	display: inline;
+}
+nav a {
+	color: #cfcfcf;
+	text-decoration: none;
+	text-align: center;
+	line-height: 45px;
+}
+nav a div {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav a:hover div {
+	background-color: #cfcfcf;
+	color: #363636;
+}
+
+/* jumbotron */
+.jumbotron h2 {
+	margin-top: 100px;
+	font-weight: lighter;
+	font-size: 30px;
+}
+
+/* box */
+.box {
+	text-align: center;
+	width: 30%;
+	float: left;
+	margin: 10px;
+}
+
+/* news letter */
+.newsletter article p{
+	width: 40%;
+	float: left;
+	color: #cfcfcf;
+}
+.newsletter article form {
+	float: right;
+	margin-top: 5px;
+}
+.newsletter article input[type=email]{
+	height: 30px;
+}
+
+/* article */
+.main-col article {
+	width: 60%;
+	float: left;
+}
+.main-col aside {
+	width: 30%;
+	float: right;
+	margin-bottom: 20px;
+}
+
+/* products */
+.products article {
+	margin: 10px;
+	width: 30%;
+	float: left;
+}
+.products article .product-img {
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+}
+.products article img {
+	width: 100%;
+	height: 100%;
+}
+
+/* contact form */
+aside form {
+	width: 100%;
+}
+aside form input, textarea {
+	width: 100%;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* responsive design */
+@media(max-width: 768px){
+	header {text-align: center;}
+	header .logo {float: none; width: 100%;}
+	header nav{float: none;  width: 100%;}
+	.newsletter article p {float: none; width: 100%; text-align: center;}
+	.newsletter article form {float: none; width: 100%;}
+	.newsletter article input, .newsletter article .btn {width: 100%; margin-top: 10px; text-align: center;}
+	.box {float: none; width: 100%;}
+	.main-col article {float: none; width: 100%;}
+	.main-col aside {float: none; width: 100%;}
+	.products article {float: none; width: 100%}
+}
